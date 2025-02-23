@@ -20,11 +20,11 @@ def run():
         driver.get("https://en.wikipedia.org/wiki/Main_Page")
         
         # Print the page source for debugging
-        with open("page_source.html", "w", encoding="utf-8") as f:
-            f.write(driver.page_source)
+        # with open("page_source.html", "w", encoding="utf-8") as f:
+        #     f.write(driver.page_source)
         
         # Take a screenshot for debugging
-        driver.save_screenshot("debug.png")
+        # driver.save_screenshot("debug.png")
         
         # Wait for the search input to be visible and interactable
         search = WebDriverWait(driver, 10).until(
